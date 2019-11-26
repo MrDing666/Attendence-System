@@ -1,0 +1,39 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2019-08-14T10:25:26
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = ATSystem
+TEMPLATE = app
+
+QMAKE_LIBDIR += ../ATSystem/qextserialport/lib
+
+
+SOURCES += main.cpp\
+    SearchCard.cpp\
+    QRFID/ChannelMan/RFIDChannelMan.cpp \
+    QRFID/IEEE14443/IEEE14443Package.cpp \
+    QRFID/IEEE14443/IEEE14443Control.cpp\
+
+
+HEADERS  += SearchCard.h\
+    QRFID/ChannelMan/RFIDChannelMan.h \
+    QRFID/IEEE14443/IEEE14443Package.h \
+    QRFID/IEEE14443/IEEE14443Control.h
+
+FORMS    += SearchCard.ui
+INCLUDEPATH +=  \
+    ../ATSystem/qextserialport/include \
+    ../ATSystem/QRFID
+
+
+
+linux-arm-gnueabi-g++ {
+    target.path=/root
+    INSTALLS += target
+}
