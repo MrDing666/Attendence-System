@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/bg3.png</file>
+        <file>Images/guanliyuan.png</file>
+        <file>Images/log001.png</file>
+        <file>Images/Sign in.png</file>
+        <file>Images/manager.png</file>
+        <file>Images/superManager .png</file>
+        <file>Images/tianjia.png</file>
+        <file>Images/chaxun.png</file>
+        <file>Images/xiugai.png</file>
+        <file>Images/shanchu.png</file>
+        <file>Images/back.png</file>
+        <file>Images/bg2.jpg</file>
+    </qresource>
+</RCC>
